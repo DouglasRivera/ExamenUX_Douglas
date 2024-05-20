@@ -31,7 +31,7 @@ a {
 	grid-template-columns: minmax(300px, 18%) auto;
 }
 
-/* ---- ---- ---- HEADER ---- ---- ---- */
+/* ---- ---- ---- Encabezado ---- ---- ---- */
 .header {
 	grid-area: header;
 	padding: 0 20px;
@@ -221,7 +221,7 @@ a {
 	width: 100%;
 }
 
-/* ---- ---- ---- Mediaqueries ---- ---- ---- */
+/* ---- ---- ---- Encabezados paras las barras---- ---- ---- */
 @media screen and (max-width: 1200px) {
 	.main .grid-videos {
 		grid-template-columns: repeat(3, 1fr);
@@ -269,4 +269,29 @@ a {
 	.main .grid-videos {
 		grid-template-columns: 1fr;
 	}
+}
+.barra-recomendaciones {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: #444;
+    border-bottom: 1px solid #444;
+}
+
+.barra-recomendaciones a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #444;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #1a1818;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.barra-recomendaciones a:hover {
+    background-color: #444;
+    border-color: #444;
 }
